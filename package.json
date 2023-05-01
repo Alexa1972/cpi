@@ -1,5 +1,5 @@
 {
-  "name": "MestaSecanja",
+  "name": "mesta-secanja",
   "main": "app/app.js",
   "version": "1.0.0",
   "private": true,
@@ -7,9 +7,10 @@
     "@nativescript/core": "~8.4.0",
     "@nativescript/theme": "~3.0.2",
     "nativescript-vue": "~2.9.2",
-    "vuex": "^4.1.0"
+    "vuex": "^3.6.2"
   },
   "devDependencies": {
+    "@nativescript/android": "8.4.0",
     "@nativescript/webpack": "~5.0.12",
     "nativescript-vue-template-compiler": "~2.9.2"
   }

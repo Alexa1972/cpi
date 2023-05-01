@@ -1,5 +1,5 @@
 import Vue from 'nativescript-vue';
-import Vuex from '../vuex';
+import Vuex from 'vuex';
 Vue.use(Vuex);
 
 const cpiStore = new Vuex.Store({

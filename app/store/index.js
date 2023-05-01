@@ -241,8 +241,20 @@ const cpiStore = new Vuex.Store({
     return message[curLng] ? message[curLng] : message[defLng]
   },
   getCities: state => {
-
-  }
+    let defLng = state.languages.default
+    let curLng = state.languages.current
+    return state.cities.map(city => {
+      return city.name[curLng] ? city.name[curLng] : city.name[defLng]
+    })
+  },
+   getLocations: (state) => (cityNo) => {
+    let locations = state.cities.length <= cityNo ? state.cities[cityNo].locations : []
+    let defLng = state.languages.default
+    let curLng = state.languages.current
+    return locations.map(location => {
+      return location.name[curLng] ? location.name[curLng] : location.name[defLng]
+    })
+   }
 })
 
 export default cpiStore

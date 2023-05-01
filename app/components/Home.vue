@@ -19,7 +19,7 @@
 export default {
   computed: {
     message() {
-      return 'Blank {N}-Vue app v1';
+      return 'Blank {N}-Vue app v2';
     },
   },
 };
